@@ -8,7 +8,7 @@ The feed algorithm looks for certain words, regex matches, and bsky users. See `
 
 # Running the Server
 
-Install dependencies with yarn and then run the server with yarn start. This will start the server on port 3200.
+Install dependencies with `yarn` and then run the server with `yarn start`. This will start the server on port 3200.
 
 # Publishing the Feed
 
