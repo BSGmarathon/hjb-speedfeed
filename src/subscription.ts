@@ -21,6 +21,7 @@ const matchText: string[] = [
   'fastest furs',
   'finnruns',
   'games done quick',
+  'gdq',
   'interglitches',
   'lady arcaders',
   'midspring speedfling',
