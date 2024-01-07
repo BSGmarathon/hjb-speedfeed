@@ -26,7 +26,7 @@ const run = async () => {
   // (Optional) A description of your feed
   // Ex: Top trending content from the whole network
   const description =
-    'Posts about video game speedrunning events, personalities, and culture. For your posts to appear in this feed, use #speedrun.\n\nManaged by @jayena.hijumpboots.com'
+    'Posts about video game speedrunning events, personalities, and culture. For your posts to appear in this feed, use #speedrun.\n\nMatch list: https://github.com/goth-uhaul/hjb-speedfeed/blob/main/src/subscription.ts\n\nManaged by @jayena.hijumpboots.com'
 
   // (Optional) The path to an image to be used as your feed's avatar
   // Ex: ~/path/to/avatar.jpeg
