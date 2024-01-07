@@ -1,10 +1,10 @@
 {
-  "name": "feed-generator",
+  "name": "hjb-speedfeed",
   "version": "1.0.0",
-  "description": "atproto feed generator starter kit",
+  "description": "HiJumpBoots SpeedFeed",
   "main": "index.js",
-  "repository": "git@github.com:bluesky-social/feed-generator.git",
-  "author": "dholms <dtholmgren@gmail.com>",
+  "repository": "git@github.com:goth-uhaul/hjb-speedfeed",
+  "author": "jayena <hijumpboots@gmail.com>",
   "license": "MIT",
   "scripts": {
     "publishFeed": "ts-node scripts/publishFeedGen.ts",
@@ -20,6 +20,7 @@
     "@atproto/xrpc-server": "^0.3.2",
     "better-sqlite3": "^9.2.2",
     "dotenv": "^16.0.3",
+    "env-var": "^7.4.1",
     "express": "^4.18.2",
     "kysely": "^0.22.0",
     "multiformats": "^9.9.0"

@@ -10,6 +10,7 @@ import { FirehoseSubscriptionBase, getOpsByType } from './util/subscription'
 const matchText: string[] = [
   // obvious
   '#speedrun',
+  '#speedrunner',
   // events
   'agdq',
   'arpgme',
@@ -18,7 +19,6 @@ const matchText: string[] = [
   'esa winter',
   'esa summer',
   'fastest furs',
-  'fastestfurs',
   'finnruns',
   'games done quick',
   'interglitches',
@@ -29,7 +29,8 @@ const matchText: string[] = [
   'prevent a thon',
   'really really long a thon',
   'really really lots of lore',
-  'rta in',
+  'rtainjapan',
+  '#rtain',
   'sgdq',
   'soaringspeedfest',
   'speedfest',
@@ -38,6 +39,7 @@ const matchText: string[] = [
   'speedrun marathon',
   'speedrun mode',
   'speedrun practice',
+  'speedrun training',
   'speedrun routing',
   'speedrun stream',
   'speedrun wr',
@@ -47,7 +49,7 @@ const matchText: string[] = [
 
 const bannedText: string[] = [
   // obvious
-  'nsfw',
+  ' nsfw ',
   '#nsfw',
 ]
 
@@ -59,17 +61,17 @@ const matchPatterns: RegExp[] = [
   //horaro
   /(^|[\s\W])horaro\.org($|[\W\s])/im,
   //'speedrun' AND a link to twitch.tv
-  /(^|[\s\W])speedrun[\S\s*]*twitch\.tv\/($|[\W\s])/im,
+  /speedrun($|.*)twitch.tv/im,
   //'speedrun' AND a link to youtube
-  /(^|[\s\W])speedrun[\S\s*]*youtu\.be\/($|[\W\s])/im,
+  /speedrun($|.*)youtu.be/im,
   //'speedrun' AND 'pb'
-  /(^|[\s\W])speedrun[\S\s*]*pb($|[\W\s])/im,
+  /(^|[\s\W])speedrun($|.*)pb($|[\W\s])/im,
   //'pb' AND 'speedrun'
-  /(^|[\s\W])pb[\S\s*]*speedrun($|[\W\s])/im,
+  /(^|[\s\W])pb($|.*)speedrun($|[\W\s])/im,
   //twitch.tv/gamesdonequick
-  /(^|[\s\W])twitch\.tv\/gamesdonequick($|[\W\s])/im,
+  /twitch\.tv\/gamesdonequick/im,
   //'really really' AND a link to twitch.tv
-  /(^|[\s\W])really really[\S\s*]*twitch\.tv\/($|[\W\s])/im,
+  /really really($|.*)twitch.tv/im,
 ]
 
 // these users ONLY talk about speedrunning - scheduler bots, etc

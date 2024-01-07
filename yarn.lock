@@ -609,6 +609,11 @@ end-of-stream@^1.1.0, end-of-stream@^1.4.1:
   dependencies:
     once "^1.4.0"
 
+env-var@^7.4.1:
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/env-var/-/env-var-7.4.1.tgz#88af75fe16cc11031000f88d4777802c6958a01c"
+  integrity sha512-H8Ga2SbXTQwt6MKEawWSvmxoH1+J6bnAXkuyE7eDvbGmrhIL2i+XGjzGM3DFHcJu8GY1zY9/AnBJY8uGQYPHiw==
+
 escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz"
