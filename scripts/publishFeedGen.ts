@@ -8,7 +8,7 @@ const run = async () => {
 
   // YOUR bluesky handle
   // Ex: user.bsky.social
-  const handle = 'jayena.hijumpboots.com'
+  const handle = 'speedfeed.hijumpboots.com'
 
   // YOUR bluesky password, or preferably an App Password (found in your client settings)
   // Ex: abcd-1234-efgh-5678
@@ -26,7 +26,7 @@ const run = async () => {
   // (Optional) A description of your feed
   // Ex: Top trending content from the whole network
   const description =
-    'Posts about video game speedrunning events, personalities, and culture. For your posts to appear in this feed, use #speedrun.'
+    'Posts about video game speedrunning events, personalities, and culture. For your posts to appear in this feed, use #speedrun.\n\nManaged by @jayena.hijumpboots.com'
 
   // (Optional) The path to an image to be used as your feed's avatar
   // Ex: ~/path/to/avatar.jpeg
