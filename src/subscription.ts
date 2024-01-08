@@ -21,7 +21,8 @@ const matchText: string[] = [
   'fastest furs',
   'finnruns',
   'games done quick',
-  'gdq',
+  '#gdq',
+  ' gdq',
   'interglitches',
   'lady arcaders',
   'midspring speedfling',
@@ -69,6 +70,10 @@ const matchPatterns: RegExp[] = [
   /(^|[\s\W])speedrun($|.*)pb($|[\W\s])/im,
   //'pb' AND 'speedrun'
   /(^|[\s\W])pb($|.*)speedrun($|[\W\s])/im,
+  //'speedrun' AND 'wr'
+  /(^|[\s\W])speedrun($|.*)wr($|[\W\s])/im,
+  //'wr' AND 'speedrun'
+  /(^|[\s\W])wr($|.*)speedrun($|[\W\s])/im,
   //twitch.tv/gamesdonequick
   /twitch\.tv\/gamesdonequick/im,
   //'really really' AND a link to twitch.tv
