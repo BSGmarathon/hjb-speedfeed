@@ -9,10 +9,10 @@ import { FirehoseSubscriptionBase, getOpsByType } from './util/subscription'
 
 const matchText: string[] = [
   // obvious
-  '#speedrun',
-  '#speedrunner',
+  ' #speedrun',
+  ' #speedrunner',
   // events
-  'agdq',
+  ' agdq',
   'arpgme',
   'benelux speedrunner gathering',
   'bsg annual',
@@ -21,19 +21,20 @@ const matchText: string[] = [
   'fastest furs',
   'finnruns',
   'games done quick',
-  '#gdq',
+  ' #gdq',
   ' gdq',
   'interglitches',
   'lady arcaders',
   'midspring speedfling',
   'midwest speedfest',
   'obscurathon',
+  'power up with pride',
   'prevent a thon',
   'really really long a thon',
   'really really lots of lore',
   'rtainjapan',
   '#rtain',
-  'sgdq',
+  ' sgdq',
   'soaringspeedfest',
   'speedfest',
   'speedons',
@@ -45,6 +46,8 @@ const matchText: string[] = [
   'speedrun routing',
   'speedrun stream',
   'speedrun wr',
+  // 'word' + speedrun
+  'first speedrun',
   // bluesky (test; disable in release)
   //'bluesky',
 ]
@@ -63,7 +66,7 @@ const matchPatterns: RegExp[] = [
   //horaro
   /(^|[\s\W])horaro\.org($|[\W\s])/im,
   //'speedrun' AND a link to twitch.tv
-  /speedrun($|.*)twitch.tv/im,
+  /speedrun[\s\S]*?twitch.tv/im,
   //'speedrun' AND a link to youtube
   /speedrun($|.*)youtu.be/im,
   //'speedrun' AND 'pb'
@@ -82,13 +85,20 @@ const matchPatterns: RegExp[] = [
 
 // these users ONLY talk about speedrunning - scheduler bots, etc
 const matchUsers: string[] = [
-  //
+  'did:plc:rqbyxmhdeyjsygglwxkhwnlb', // bigbadgameathon.bsky.social
+  'did:plc:sucjrnduu3iytwhtt36g2d54', // gamesdonequick.bsky.social
+  'did:plc:i52rffe5ktfyfgiunsirz7ge', // ladyarcaders.com
+  'did:plc:zsk2ehpsgci254k3r3czqcpe', // pixelperfectevents.bsky.social
+  'did:plc:q7ecflq2zteowyqgysmstb2e', // powerupwithpride.bsky.social
+  'did:plc:yggbmd27ii4z3cpgpabaa2gn', // preventathon.bsky.social
+  'did:plc:x6b5kfl6bnrgplbentbei6mg', // therpgvalkyries.bsky.social
   'did:plc:pz54re7np33stvrgz4bj6nbl', // rtajapan.bsky.social
+  'did:plc:mfmbxqdlvkunpb2i2rwdtvhn', // therun.bsky.social
 ]
 
 // Exclude posts from these users
 const bannedUsers: string[] = [
-  //
+  'did:plc:23thhiqwpowmlelje4ft76br', // gam1ng.bsky.social (bot content)
 ]
 
 export class FirehoseSubscription extends FirehoseSubscriptionBase {
