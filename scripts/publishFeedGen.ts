@@ -12,7 +12,7 @@ const run = async () => {
 
   // YOUR bluesky password, or preferably an App Password (found in your client settings)
   // Ex: abcd-1234-efgh-5678
-  const password = process.env.PASSWORD as string
+  const password = process.env.ACCOUNT_PASSWORD as string
 
   // A short name for the record that will show in urls
   // Lowercase with no spaces.
@@ -26,11 +26,11 @@ const run = async () => {
   // (Optional) A description of your feed
   // Ex: Top trending content from the whole network
   const description =
-    'Posts about video game speedrunning events, personalities, and culture. For your posts to appear in this feed, use #speedrun.\n\nMatch list: https://github.com/goth-uhaul/hjb-speedfeed/blob/main/src/subscription.ts\n\nManaged by @jayena.hijumpboots.com'
+    'Posts about video game speedrunning events, personalities, and culture. For your posts to appear in this feed, use #speedrun.\n\nMatch list: https://github.com/goth-uhaul/hjb-speedfeed/blob/main/src/subscription.ts\n\nFor issues, account exclusions, etc., reach out to @jayena.hijumpboots.com.'
 
   // (Optional) The path to an image to be used as your feed's avatar
   // Ex: ~/path/to/avatar.jpeg
-  const avatar: string = '../avatar.jpg'
+  const avatar: string = 'avatar.jpg'
 
   // -------------------------------------
   // NO NEED TO TOUCH ANYTHING BELOW HERE
