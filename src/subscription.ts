@@ -56,6 +56,58 @@ const bannedText: string[] = [
   // obvious
   ' nsfw ',
   '#nsfw',
+  ' anal ',
+  ' anus ',
+  ' ballsack ',
+  ' biatch ',
+  ' blowjob ',
+  ' blow job ',
+  ' bollock ',
+  ' bollok ',
+  ' boner ',
+  ' boob ',
+  ' bum ',
+  ' butt ',
+  ' buttplug ',
+  ' clitoris ',
+  ' cock ',
+  ' coon ',
+  ' cunt ',
+  ' dick ',
+  ' dildo ',
+  ' dyke',
+  ' fag ',
+  ' feck ',
+  ' fellate ',
+  ' fellatio ',
+  ' felching ',
+  ' fudgepacker ',
+  ' fudge packer ',
+  ' hell ',
+  ' homo ',
+  ' jizz ',
+  ' knobend ',
+  ' knob end ',
+  ' labia ',
+  ' muff ',
+  ' nigger ',
+  ' nigga ',
+  ' penis ',
+  ' piss ',
+  ' poop ',
+  ' prick ',
+  ' pube ',
+  ' pussy ',
+  ' scrotum ',
+  ' slut ',
+  ' smegma ',
+  ' spunk ',
+  ' tosser ',
+  ' turd ',
+  ' twat ',
+  ' vagina ',
+  ' wank ',
+  ' whore ',
 ]
 
 const matchPatterns: RegExp[] = [
@@ -94,11 +146,13 @@ const matchUsers: string[] = [
   'did:plc:x6b5kfl6bnrgplbentbei6mg', // therpgvalkyries.bsky.social
   'did:plc:pz54re7np33stvrgz4bj6nbl', // rtajapan.bsky.social
   'did:plc:mfmbxqdlvkunpb2i2rwdtvhn', // therun.bsky.social
+  'did:plc:275rmae3bc63ib5pcsmmtw5d', // fastestfurs.com
 ]
 
 // Exclude posts from these users
 const bannedUsers: string[] = [
   'did:plc:23thhiqwpowmlelje4ft76br', // gam1ng.bsky.social (bot content)
+  'did:plc:zfkcqg2nyqfs7p2a2hy6rxhj', // abrahamicgod.bsky.social (chauvinism, chaser behavior)
 ]
 
 export class FirehoseSubscription extends FirehoseSubscriptionBase {
