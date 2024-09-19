@@ -21,6 +21,7 @@ const matchText: string[] = [
   'fastest furs',
   'finnruns',
   'games done quick',
+  'gamesdonequick',
   ' #gdq',
   ' gdq',
   'interglitches',
@@ -45,7 +46,6 @@ const matchText: string[] = [
   'speedrun training',
   'speedrun routing',
   'speedrun stream',
-  'speedrun wr',
   // 'word' + speedrun
   'first speedrun',
   // bluesky (test; disable in release)
@@ -125,10 +125,6 @@ const matchPatterns: RegExp[] = [
   /(^|[\s\W])speedrun($|.*)pb($|[\W\s])/im,
   //'pb' AND 'speedrun'
   /(^|[\s\W])pb($|.*)speedrun($|[\W\s])/im,
-  //'speedrun' AND 'wr'
-  /(^|[\s\W])speedrun($|.*)wr($|[\W\s])/im,
-  //'wr' AND 'speedrun'
-  /(^|[\s\W])wr($|.*)speedrun($|[\W\s])/im,
   //twitch.tv/gamesdonequick
   /twitch\.tv\/gamesdonequick/im,
   //'really really' AND a link to twitch.tv
@@ -152,7 +148,7 @@ const matchUsers: string[] = [
 // Exclude posts from these users
 const bannedUsers: string[] = [
   'did:plc:23thhiqwpowmlelje4ft76br', // gam1ng.bsky.social (bot content)
-  'did:plc:zfkcqg2nyqfs7p2a2hy6rxhj', // abrahamicgod.bsky.social (chauvinism, chaser behavior)
+  'did:plc:25vwhhzdpnaujzookpsqxlns', // lpx.bsky.social (low effort content)
 ]
 
 export class FirehoseSubscription extends FirehoseSubscriptionBase {

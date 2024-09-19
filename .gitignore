@@ -134,3 +134,6 @@ dist
 
 # persistent Sqlite DB
 db.sqlite
+
+# .vs folder
+.vs
