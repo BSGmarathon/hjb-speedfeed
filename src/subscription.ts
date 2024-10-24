@@ -115,6 +115,8 @@ const matchPatterns: RegExp[] = [
   /(^|[\s\W])speedrun\.com($|[\W\s])/im,
   //oengus
   /(^|[\s\W])oengus\.io($|[\W\s])/im,
+  //oengus short urls
+  /(^|[\s\W])oengus\.fun($|[\W\s])/im,
   //horaro
   /(^|[\s\W])horaro\.org($|[\W\s])/im,
   //'speedrun' AND a link to twitch.tv
@@ -143,6 +145,7 @@ const matchUsers: string[] = [
   'did:plc:pz54re7np33stvrgz4bj6nbl', // rtajapan.bsky.social
   'did:plc:mfmbxqdlvkunpb2i2rwdtvhn', // therun.bsky.social
   'did:plc:275rmae3bc63ib5pcsmmtw5d', // fastestfurs.com
+  'did:plc:5f3tjhknxvpmjt2mazg7n57g', // bsgmarathon.bsky.social
 ]
 
 // Exclude posts from these users
